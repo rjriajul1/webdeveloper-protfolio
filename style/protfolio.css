@@ -19,6 +19,8 @@
    
 }
 /* shared primary */
+
+
 .text-primary{
     color: #FD6E0A;
  }
@@ -110,8 +112,11 @@ nav li a{
 .banner-title{
     font-weight: bold;
     font-size: 85px;
-    margin-bottom: 22px;
+    margi-bottom: 22px;
+
 }
+    
+
 .banner-description{
     font-size: 18px;
     font-weight: 400;
@@ -295,3 +300,144 @@ footer input[type="text"],footer input[type="email"],footer textarea{
 
 
 /* footer section end */
+
+
+@media screen and (max-width:576px) {
+     .container,.banner,nav,ul,.btn-primary{
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .banner-title{
+        font-weight: bold;
+        font-size: 35px;
+        margi-bottom: 22px;
+    
+    }
+    
+.banner-description{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  width: 80%;
+}
+    .btn-primary{
+        margin-bottom: 20px;
+
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    ul li{
+        margin-bottom: 40px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .container .skills{
+        width: 90%;
+        margin-bottom: 10px;
+        
+    }
+    .skill-descriprtion{
+        text-align: justify;
+    }
+
+
+
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .content-title{
+        text-align: center;
+    }
+    .content-sub-title{
+        text-align: center;
+    }
+    .publish{
+        text-align: center;
+    }
+    .content-container,.content-description{
+        text-align: center;
+        
+    }
+    footer input[type="text"],footer input[type="email"],footer textarea{
+        width: calc(100% - 40px);
+    }
+
+
+
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-colume{
+        width: 100%;
+    }
+
+    .about{
+        padding: 20px;
+    }
+    .foot-container{
+        flex-direction: column;
+    }
+    .container-1{
+        width: 100%;
+
+    }
+    
+    
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .container{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+        
+
+    }
+    .container .skills{
+        width: 90%;
+        margin-bottom: 10px;
+        
+    }
+    .skill-descriprtion{
+        text-align: justify;
+    }
+
+
+     
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-colume{
+        width: 100%;
+    }
+    footer input[type="text"],footer input[type="email"],footer textarea{
+        width: calc(100% - 40px);
+    }
+
+
+    .foot-container{
+        flex-direction: column;
+    }
+    .container-1{
+        width: 100%;
+
+    }
+
+    
+
+    
+}
